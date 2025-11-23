@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Practice</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Hello Amir</h1>
-    <p>This is your first professional UI practice session.</p>
+<nav class="navbar">
+    <div class="logo">YourBrand</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero fade-in-up">
+    <h1>Build fast, beautiful web experiences</h1>
+    <p>Practice modern UI layouts and master front-end development step by step.</p>
+    <button class="cta">Get Started</button>
+</section>
+<section class="testimonials fade-in-up delay-3">
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials-grid">
+        <article class="testimonial-card">
+            <p class="testimonial-quote">
+                “This layout practice helped me finally understand how to build modern, clean landing pages.”
+            </p>
+            <div>
+                <p class="testimonial-author">Alex</p>
+                <p class="testimonial-role">Front-end Developer</p>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <p class="testimonial-quote">
+                “The component-based approach makes it so much easier to move this into frameworks like SvelteKit.”
+            </p>
+            <div>
+                <p class="testimonial-author">Jamie</p>
+                <p class="testimonial-role">UI Engineer</p>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <p class="testimonial-quote">
+                “Clean, responsive and easy to maintain. This is exactly how I want my projects to feel.”
+            </p>
+            <div>
+                <p class="testimonial-author">Taylor</p>
+                <p class="testimonial-role">Product Designer</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="two-col fade-in-up delay-1">
+    <div class="col text">
+        <h2>Design. Develop. Deliver.</h2>
+        <p>
+            Learn to build clean, modern interfaces with solid foundations in layout,
+            spacing, typography, and responsive design.
+        </p>
+        <button class="cta light">Learn More</button>
+    </div>
+    <div class="col image">
+        <div class="placeholder"></div>
+    </div>
+</section>
+<section class="features fade-in-up delay-2">
+    <h2 class="section-title">Why Practice UI?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>Clean Layouts</h3>
+            <p>Develop the ability to build beautiful, modern designs with consistent spacing.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Reusable Components</h3>
+            <p>Learn how to structure code that is maintainable and scalable.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Real-World Design</h3>
+            <p>Understand the patterns used in professional landing pages and apps.</p>
+        </div>
+    </div>
+</section>
 </div>
 
-    <!-- We will build the UI here -->
-
+<footer class="footer">
+    <p>© 2025 YourBrand. All rights reserved.</p>
+</footer>
 </body>
 </html>
