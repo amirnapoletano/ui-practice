@@ -17,6 +17,7 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
 </nav>
 
 <section class="hero fade-in-up">
@@ -24,42 +25,32 @@
     <p>Practice modern UI layouts and master front-end development step by step.</p>
     <button class="cta">Get Started</button>
 </section>
-<section class="testimonials fade-in-up delay-3">
-    <h2 class="section-title">What People Say</h2>
-    <div class="testimonials-grid">
-        <article class="testimonial-card">
-            <p class="testimonial-quote">
-                “This layout practice helped me finally understand how to build modern, clean landing pages.”
-            </p>
-            <div>
-                <p class="testimonial-author">Alex</p>
-                <p class="testimonial-role">Front-end Developer</p>
-            </div>
-        </article>
 
-        <article class="testimonial-card">
-            <p class="testimonial-quote">
-                “The component-based approach makes it so much easier to move this into frameworks like SvelteKit.”
-            </p>
-            <div>
-                <p class="testimonial-author">Jamie</p>
-                <p class="testimonial-role">UI Engineer</p>
-            </div>
-        </article>
-
-        <article class="testimonial-card">
-            <p class="testimonial-quote">
-                “Clean, responsive and easy to maintain. This is exactly how I want my projects to feel.”
-            </p>
-            <div>
-                <p class="testimonial-author">Taylor</p>
-                <p class="testimonial-role">Product Designer</p>
-            </div>
-        </article>
+<section class="about fade-in-up delay-1" id="about">
+    <div class="about-text">
+        <h2>Hi, I’m Amir — a web designer & front-end developer.</h2>
+        <p>
+            I love creating clean, modern interfaces that feel fast, simple, and intuitive.
+            This project is where I practice layouts, components, and interactions to level up my skills.
+        </p>
+        <p>
+            My focus is on building real-world interfaces using HTML, CSS, JavaScript and modern frameworks like SvelteKit.
+        </p>
+        <div class="about-meta">
+            <span>Design &amp; Front-end</span>
+            <span>UI practice &amp; client work</span>
+            <span>Learning every day</span>
+        </div>
     </div>
+    <aside class="about-card">
+        <p class="about-label">Current focus</p>
+        <p class="about-highlight">Becoming a smart, professional web designer & developer.</p>
+        <p class="about-note">
+            I’m refining my skills step by step — from visual design and layout to clean code and solid workflows.
+        </p>
+    </aside>
 </section>
-
-<section class="two-col fade-in-up delay-1">
+<section class="two-col fade-in-up delay-2">
     <div class="col text">
         <h2>Design. Develop. Deliver.</h2>
         <p>
@@ -72,25 +63,69 @@
         <div class="placeholder"></div>
     </div>
 </section>
-<section class="features fade-in-up delay-2">
+<section class="features fade-in-up delay-2" id="features">
     <h2 class="section-title">Why Practice UI?</h2>
     <div class="feature-grid">
         <div class="feature-card">
+            <div class="feature-icon">🎨</div>
             <h3>Clean Layouts</h3>
             <p>Develop the ability to build beautiful, modern designs with consistent spacing.</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon">🧩</div>
             <h3>Reusable Components</h3>
             <p>Learn how to structure code that is maintainable and scalable.</p>
         </div>
         <div class="feature-card">
+            <div class="feature-icon">⚡</div>
             <h3>Real-World Design</h3>
             <p>Understand the patterns used in professional landing pages and apps.</p>
         </div>
     </div>
 </section>
 
-<section class="pricing fade-in-up delay-3">
+<section class="projects fade-in-up delay-3" id="projects">
+    <h2 class="section-title">Selected practice projects</h2>
+    <div class="projects-grid">
+        <article class="project-card">
+            <p class="project-tag">Layout</p>
+            <p class="project-title">Responsive Landing Page</p>
+            <p class="project-description">
+                A clean, responsive layout focused on clear hierarchy, CTA placement, and modern spacing.
+            </p>
+            <div class="project-links">
+                <a href="#">View</a>
+                <a href="#">Code</a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <p class="project-tag">Components</p>
+            <p class="project-title">UI Components Library</p>
+            <p class="project-description">
+                Buttons, cards, navigation, and sections built as reusable building blocks.
+            </p>
+            <div class="project-links">
+                <a href="#">View</a>
+                <a href="#">Code</a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <p class="project-tag">Practice</p>
+            <p class="project-title">SaaS-Style Page</p>
+            <p class="project-description">
+                A product-style page with pricing, testimonials, and a clear visual story.
+            </p>
+            <div class="project-links">
+                <a href="#">View</a>
+                <a href="#">Code</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="pricing fade-in-up delay-4" id="pricing">
     <h2 class="section-title">Simple Pricing</h2>
     <p class="pricing-subtitle">Choose a plan that matches your learning pace and helps you grow as a designer & developer.</p>
     <div class="pricing-grid">
@@ -134,10 +169,113 @@
 
     </div>
 </section>
+
+<section class="testimonials fade-in-up delay-1" id="testimonials">
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials-grid">
+        <article class="testimonial-card">
+            <p class="testimonial-quote">
+                “This layout practice helped me finally understand how to build modern, clean landing pages.”
+            </p>
+            <div>
+                <p class="testimonial-author">Alex</p>
+                <p class="testimonial-role">Front-end Developer</p>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <p class="testimonial-quote">
+                “The component-based approach makes it so much easier to move this into frameworks like SvelteKit.”
+            </p>
+            <div>
+                <p class="testimonial-author">Jamie</p>
+                <p class="testimonial-role">UI Engineer</p>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <p class="testimonial-quote">
+                “Clean, responsive and easy to maintain. This is exactly how I want my projects to feel.”
+            </p>
+            <div>
+                <p class="testimonial-author">Taylor</p>
+                <p class="testimonial-role">Product Designer</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="contact fade-in-up delay-2" id="contact">
+    <h2 class="section-title">Let’s build something</h2>
+    <p>If you like this kind of clean, focused interface and want help designing or developing your next project, feel free to reach out.</p>
+    <div class="contact-actions">
+        <a class="cta" href="mailto:your@email.com">Email me</a>
+        <a class="cta light" href="#">View more work</a>
+    </div>
+    <p class="contact-secondary">
+        Prefer socials? You can also connect on
+        <a href="#">LinkedIn</a>
+        or
+        <a href="#">GitHub</a>.
+    </p>
+</section>
 </div>
 
 <footer class="footer">
     <p>© 2025 YourBrand. All rights reserved.</p>
 </footer>
+<script>
+(function() {
+    const body = document.body;
+    const toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+        const storedTheme = window.localStorage.getItem('theme');
+        if (storedTheme === 'dark') {
+            body.classList.add('dark');
+            toggle.textContent = '☀️';
+        } else {
+            toggle.textContent = '🌙';
+        }
+
+        toggle.addEventListener('click', () => {
+            const isDark = body.classList.toggle('dark');
+            window.localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            toggle.textContent = isDark ? '☀️' : '🌙';
+        });
+    }
+
+    // Scroll-based fade-in animations
+    const animatedSections = document.querySelectorAll('.fade-in-up');
+    if ('IntersectionObserver' in window && animatedSections.length) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        animatedSections.forEach(section => observer.observe(section));
+    } else {
+        // Fallback: show all if IntersectionObserver not supported
+        animatedSections.forEach(section => section.classList.add('in-view'));
+    }
+
+    // Sticky navbar shadow on scroll
+    const handleScroll = () => {
+        if (window.scrollY > 10) {
+            body.classList.add('scrolled');
+        } else {
+            body.classList.remove('scrolled');
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+})();
+</script>
 </body>
 </html>
