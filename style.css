@@ -119,6 +119,12 @@ body.scrolled .navbar {
     width: 100%;
 }
 
+.nav-links a:focus-visible {
+    outline: 2px solid rgba(37, 99, 235, 0.9);
+    outline-offset: 3px;
+    border-radius: 999px;
+}
+
 body.dark .nav-links a {
     color: var(--color-text-main);
 }
@@ -138,6 +144,14 @@ body.dark .nav-links a:hover {
     border-radius: 20px;
     box-shadow: 0 24px 60px rgba(15, 23, 42, 0.10);
     margin-top: 2rem;
+}
+
+.hero-kicker {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.9rem;
 }
 
 .hero h1 {
@@ -165,11 +179,25 @@ body.dark .nav-links a:hover {
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
     transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(0);    
 }
+
+.cta:focus-visible {
+    outline: 2px solid rgba(56, 189, 248, 0.9);
+    outline-offset: 3px;
+}
+
+.cta:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+    filter: brightness(0.96);
+}
+
+
 
 .cta:hover {
     background: #1d4ed8;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     box-shadow: 0 14px 35px rgba(37, 99, 235, 0.45);
 }
 
@@ -315,6 +343,15 @@ body.dark .nav-links a:hover {
     box-shadow: 0 24px 60px rgba(15, 23, 42, 0.10);
     border-color: rgba(37, 99, 235, 0.5);
 }
+
+.feature-card:hover,
+.pricing-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.10);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
 .contact {
     padding: 4rem 1rem 5rem;
     text-align: center;
@@ -365,8 +402,37 @@ body.dark .nav-links a:hover {
 .placeholder {
     width: 100%;
     height: 300px;
-    background: #e5e7eb;
-    border-radius: 10px;
+    border-radius: 16px;
+    background:
+        linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(236, 72, 153, 0.08)),
+        linear-gradient(to bottom, #f9fafb, #e5e7eb);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.placeholder::before,
+.placeholder::after {
+    content: "";
+    position: absolute;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.placeholder::before {
+    top: 12%;
+    left: 10%;
+    right: 20%;
+    height: 22%;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.placeholder::after {
+    bottom: 12%;
+    left: 12%;
+    right: 18%;
+    height: 32%;
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.10);
 }
 
 .feature-icon {
@@ -446,6 +512,13 @@ body.dark .nav-links a:hover {
     gap: 0.75rem;
 }
 
+.project-card,
+.feature-card,
+.pricing-card,
+.testimonial-card {
+    transform-origin: center top;
+}
+
 .testimonial-quote {
     font-size: 0.98rem;
     line-height: 1.6;
@@ -466,7 +539,7 @@ body.dark .nav-links a:hover {
 /* Animation utility classes and keyframes */
 .fade-in-up {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(12px) scale(0.99);
 }
 
 .fade-in-up.in-view {
@@ -492,7 +565,7 @@ body.dark .nav-links a:hover {
 @keyframes fadeInUp {
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
@@ -618,6 +691,17 @@ body.dark {
     --color-text-muted: #9ca3af;
 }
 
+/* Improve chip/label visibility in dark mode */
+body.dark .about-meta {
+    color: var(--color-text-main);
+}
+
+body.dark .about-meta span {
+    background: rgba(15, 23, 42, 0.95);
+    border-color: rgba(148, 163, 184, 0.75);
+    color: var(--color-text-main);
+}
+
 body,
 .hero,
 .feature-card,
@@ -633,10 +717,12 @@ body,
     }
 
     .two-col {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2.5rem;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem 1rem 5rem;
+}
 
     .two-col .text {
         order: 1;
@@ -679,10 +765,12 @@ body,
     /* ABOUT SECTION – stack nicely */
 
     .about {
-        grid-template-columns: 1fr;
-        text-align: left;
-        gap: 2rem;
-    }
+    padding: 4rem 1rem 5rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: center;
+}
 
     .about-text p {
         margin-left: 0;
@@ -751,6 +839,12 @@ body,
         font-size: 0.82rem;
         flex-wrap: wrap;
     }
+
+    .nav-links a:focus-visible {
+    outline: 2px solid rgba(148, 163, 184, 0.8);
+    outline-offset: 3px;
+    border-radius: 999px;
+}
 
     .hero {
         padding: 2.6rem 1rem 2.8rem;
